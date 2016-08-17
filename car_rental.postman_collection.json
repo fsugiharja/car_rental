@@ -1,0 +1,428 @@
+{
+	"variables": [],
+	"info": {
+		"name": "car_rental",
+		"_postman_id": "8ea0e340-c87f-898f-7781-9dfcfbe24ea8",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/clients",
+			"request": {
+				"url": "http://localhost/car_rental/clients",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "data[name]",
+							"value": "Ahmad Nurwanto",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "data[gender]",
+							"value": "male",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "API create client"
+			},
+			"response": []
+		},
+		{
+			"name": "/clients/{id}",
+			"request": {
+				"url": "http://localhost/car_rental/clients/1",
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "data[name]",
+							"value": "Ahmad Nurwanto",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "data[gender]",
+							"value": "male",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "API update client"
+			},
+			"response": []
+		},
+		{
+			"name": "/clients/{id}",
+			"request": {
+				"url": "http://localhost/car_rental/clients/2",
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"description": "API delete client"
+			},
+			"response": []
+		},
+		{
+			"name": "/clients",
+			"request": {
+				"url": "http://localhost/car_rental/clients",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "data[name]",
+							"value": "Ihsan",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "data[gender]",
+							"value": "male",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "API get all client"
+			},
+			"response": []
+		},
+		{
+			"name": "/cars",
+			"request": {
+				"url": "http://localhost/car_rental/cars",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "data[brand]",
+							"value": "Toyota",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "data[type]",
+							"value": "Yaris",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "data[year]",
+							"value": "2015",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "data[color]",
+							"value": "Orange",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "data[plate]",
+							"value": "B 1234 HND",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "API create cars"
+			},
+			"response": []
+		},
+		{
+			"name": "/cars/{id}",
+			"request": {
+				"url": "http://localhost/car_rental/cars/3",
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "data[brand]",
+							"value": "Honda",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "data[type]",
+							"value": "civic",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "data[year]",
+							"value": "2015",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "data[color]",
+							"value": "Black",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "data[plate]",
+							"value": "D 1234 HND",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "API edit cars"
+			},
+			"response": []
+		},
+		{
+			"name": "/cars/{id}",
+			"request": {
+				"url": "http://localhost/car_rental/cars/3",
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"description": "API delete cars"
+			},
+			"response": []
+		},
+		{
+			"name": "/cars",
+			"request": {
+				"url": "http://localhost/car_rental/cars",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "API get all cars"
+			},
+			"response": []
+		},
+		{
+			"name": "/rentals",
+			"request": {
+				"url": "http://localhost/car_rental/rentals",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "API get all cars"
+			},
+			"response": []
+		},
+		{
+			"name": "/rentals/{id}",
+			"request": {
+				"url": "http://localhost/car_rental/rentals/9",
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"description": "API delete rentals"
+			},
+			"response": []
+		},
+		{
+			"name": "/rentals",
+			"request": {
+				"url": "http://localhost/car_rental/rentals",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "data[car-id]",
+							"value": "5",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "data[client-id]",
+							"value": "3",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "data[date-from]",
+							"value": "2016-08-21",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "data[date-to]",
+							"value": "2016-08-21",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "API create rentals"
+			},
+			"response": []
+		},
+		{
+			"name": "/rentals/{id}",
+			"request": {
+				"url": "http://localhost/car_rental/rentals/10",
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "data[car-id]",
+							"value": "5",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "data[client-id]",
+							"value": "3",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "data[date-from]",
+							"value": "2016-08-21",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "data[date-to]",
+							"value": "2016-08-21",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "API edit rentals"
+			},
+			"response": []
+		},
+		{
+			"name": "/histories/client/{id}",
+			"request": {
+				"url": "http://localhost/car_rental/histories/client/3",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "API get rental histories by client id"
+			},
+			"response": []
+		},
+		{
+			"name": "/histories/car/{id}",
+			"request": {
+				"url": "http://localhost/car_rental/histories/car/4",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "API get rental histories by car id"
+			},
+			"response": []
+		},
+		{
+			"name": "/cars/rented?date={dd-mm-yyyy}",
+			"request": {
+				"url": "http://localhost/car_rental/cars/rented?date=31-08-2016",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "API get rented cars"
+			},
+			"response": []
+		},
+		{
+			"name": "/cars/free?date={dd-mm-yyyy}",
+			"request": {
+				"url": "http://localhost/car_rental/cars/free?date=31-08-2016",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "API get free cars"
+			},
+			"response": []
+		}
+	]
+}
